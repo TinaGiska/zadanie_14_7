@@ -1,6 +1,6 @@
 var Contact = React.createClass({
   propTypes: {
-    item: React.PropTypes.object.isRequired,
+    contact: React.PropTypes.object.isRequired,
   },
 
   render: function() {
@@ -14,8 +14,8 @@ var Contact = React.createClass({
         <p className='contactLabel'>
         Nazwisko : {this.props.contact.lastName}
         </p>
-        <a href={'mailto:' + this.props.item.email}>
-          {this.props.item.email}
+        <a href={'mailto:' + this.props.contact.email}>
+          {this.props.contact.email}
         </a>
       </div>
 
